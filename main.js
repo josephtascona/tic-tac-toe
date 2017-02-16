@@ -37,13 +37,13 @@ $(document).ready(function() {
    var h1 = bm.innerHTML.indexOf('o');
    var i1 = br.innerHTML.indexOf('o');
    function horizontal() {
-      if (a + b + c === 0) {
-         alert('x has won horizontally!!');
-      } else if ((d + e + f) === 0) {
-         alert('x has won horizontally!!');
-      } else if ((g + h + i) === 0) {
+      if (a === 0) {
          alert('x has won horizontally!!');
       }
+      // } else if ((d + e + f) === 0) {
+      //    alert('x has won horizontally!!');
+      // } else if ((g + h + i) === 0) {
+      //    alert('x has won horizontally!!');
       // } else if ((tl.innerHTML.indexOf('o') === 0) && (tm.innerHTML.indexOf('o') && tr.innerHTML.indexOf('o') === 0)) {
       //    alert('o has won horizontally!!');
       // } else if ((ml.innerHTML.indexOf('o') === 0) && (mm.innerHTML.indexOf('o') && mr.innerHTML.indexOf('o') === 0)) {
