@@ -18,45 +18,46 @@ $(document).ready(function() {
    var bl = document.getElementById('bl');
    var bm = document.getElementById('bm');
    var br = document.getElementById('br');
-   var a = tl.innerHTML.indexOf('x');
-   var b = tm.innerHTML.indexOf('x');
-   var c = tr.innerHTML.indexOf('x');
-   var d = ml.innerHTML.indexOf('x');
-   var e = mm.innerHTML.indexOf('x');
-   var f = mr.innerHTML.indexOf('x');
-   var g = bl.innerHTML.indexOf('x');
-   var h = bm.innerHTML.indexOf('x');
-   var i = br.innerHTML.indexOf('x');
-   var a1 = tl.innerHTML.indexOf('o');
-   var b1 = tm.innerHTML.indexOf('o');
-   var c1 = tr.innerHTML.indexOf('o');
-   var d1 = ml.innerHTML.indexOf('o');
-   var e1 = mm.innerHTML.indexOf('o');
-   var f1 = mr.innerHTML.indexOf('o');
-   var g1 = bl.innerHTML.indexOf('o');
-   var h1 = bm.innerHTML.indexOf('o');
-   var i1 = br.innerHTML.indexOf('o');
    function horizontal() {
-      if (a === 0) {
+      if (tl.innerHTML.indexOf('x') + tm.innerHTML.indexOf('x') + tr.innerHTML.indexOf('x') === 0) {
          alert('x has won horizontally!!');
+      } else if (ml.innerHTML.indexOf('x') + mm.innerHTML.indexOf('x') + mr.innerHTML.indexOf('x') === 0) {
+         alert('x has won horizontally!!');
+      } else if (bl.innerHTML.indexOf('x') + bm.innerHTML.indexOf('x') + br.innerHTML.indexOf('x') === 0) {
+         alert('x has won horizontally!!');
+      } else if (tl.innerHTML.indexOf('o') + tm.innerHTML.indexOf('o') + tr.innerHTML.indexOf('o') === 0) {
+         alert('o has won horizontally!!');
+      } else if (ml.innerHTML.indexOf('o') + mm.innerHTML.indexOf('o') + mr.innerHTML.indexOf('o') === 0) {
+         alert('o has won horizontally!!');
+      } else if (bl.innerHTML.indexOf('o') + bm.innerHTML.indexOf('o') + br.innerHTML.indexOf('o') === 0) {
+         alert('o has won horizontally!!');
       }
-      // } else if ((d + e + f) === 0) {
-      //    alert('x has won horizontally!!');
-      // } else if ((g + h + i) === 0) {
-      //    alert('x has won horizontally!!');
-      // } else if ((tl.innerHTML.indexOf('o') === 0) && (tm.innerHTML.indexOf('o') && tr.innerHTML.indexOf('o') === 0)) {
-      //    alert('o has won horizontally!!');
-      // } else if ((ml.innerHTML.indexOf('o') === 0) && (mm.innerHTML.indexOf('o') && mr.innerHTML.indexOf('o') === 0)) {
-      //    alert('o has won horizontally!!');
-      // } else if ((bl.innerHTML.indexOf('o') === 0) && (bm.innerHTML.indexOf('o') && br.innerHTML.indexOf('o') === 0)) {
-      //    alert('o has won horizontally!!');
-      // }
    }
    function vertical() {
-
+      if (tl.innerHTML.indexOf('x') + ml.innerHTML.indexOf('x') + bl.innerHTML.indexOf('x') === 0) {
+         alert('x has won vertically!!');
+      } else if (tm.innerHTML.indexOf('x') + mm.innerHTML.indexOf('x') + bm.innerHTML.indexOf('x') === 0) {
+         alert('x has won vertically!!');
+      } else if (tr.innerHTML.indexOf('x') + mr.innerHTML.indexOf('x') + br.innerHTML.indexOf('x') === 0) {
+         alert('x has won vertically!!');
+      } else if (tl.innerHTML.indexOf('o') + ml.innerHTML.indexOf('o') + bl.innerHTML.indexOf('o') === 0) {
+         alert('o has won vertically!!');
+      } else if (tm.innerHTML.indexOf('o') + mm.innerHTML.indexOf('o') + bm.innerHTML.indexOf('o') === 0) {
+         alert('o has won vertically!!');
+      } else if (tr.innerHTML.indexOf('o') + mr.innerHTML.indexOf('o') + br.innerHTML.indexOf('o') === 0) {
+         alert('o has won vertically!!');
+      }
    }
    function diagonal() {
-
+      if (tl.innerHTML.indexOf('x') + mm.innerHTML.indexOf('x') + br.innerHTML.indexOf('x') === 0) {
+         alert('x has won diagonally!!');
+      } else if (tr.innerHTML.indexOf('x') + mm.innerHTML.indexOf('x') + bl.innerHTML.indexOf('x') === 0) {
+         alert('x has won diagonally!!');
+      } else if (tl.innerHTML.indexOf('o') + mm.innerHTML.indexOf('o') + br.innerHTML.indexOf('o') === 0) {
+         alert('o has won diagonally!!');
+      } else if (tr.innerHTML.indexOf('o') + mm.innerHTML.indexOf('o') + bl.innerHTML.indexOf('o') === 0) {
+         alert('o has won diagonally!!');
+      }
    }
    $('.grid').on('click', function() {
       var retVal = prompt("x or o : ", "???");
