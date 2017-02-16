@@ -28,7 +28,7 @@ $(document).ready(function() {
    })
    function horizontal() {
       // if ((tl.innerHTML.indexOf('x') === 0) && (tm.innerHTML.indexOf('x') && tr.innerHTML.indexOf('x') === 0)) {
-      if (tl.innerHTML.indexOf('x') === 'x') {
+      if (tl.innerHTML.indexOf('x') === 0) {
          alert('x has won horizontally!!');
       } else if ((ml.innerHTML.indexOf('o') === 0) && (mm.innerHTML.indexOf('o') && mr.innerHTML.indexOf('o') === 0)) {
          alert('x has won horizontally!!');
