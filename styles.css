@@ -1,23 +1,16 @@
 body {
-  position: relative;
+  margin: 0;
+  background-color: black;
 }
-.x-line1 {
-  height: 10px;
-  width: 100px;
-  color: black;
+.grid-container {
+  max-width: 1000px;
+  max-height: 500px;
+  margin: 0;
 }
-.x-line2 {
-  height: 10px;
-  width: 100px;
-  color: black;
-}
-.y-line1 {
-  width: 10px;
-  height: 100px;
-  color: black;
-}
-.y-line2 {
-  width: 10px;
-  height: 100px;
-  color: black;
+.grid {
+  height: 300px;
+  width: 300px;
+  background-color: white;
+  margin: 10px;
+  display: inline-block;
 }
