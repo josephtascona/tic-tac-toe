@@ -11,12 +11,16 @@ input {
 h1 {
   color: white;
   text-align: center;
+  border-bottom: 5px solid white;
+  max-width: 400px;
+  margin: 10px auto;
 }
 .container {
-  max-width: 750px;
+  max-width: 590px;
   max-height: 700px;
   margin: 0px auto;
   text-align: center;
+  border: 10px solid white;
 }
 .grid {
   height: 150px;
