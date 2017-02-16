@@ -1,9 +1,11 @@
 p {
   color: white;
+  margin: 0;
+  max-width: 100%;
 }
 .container {
   width: 380px;
-  height: 330px;
+  height: 370px;
   margin: auto;
   position: relative;
 }
