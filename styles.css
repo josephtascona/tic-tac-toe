@@ -1,26 +1,17 @@
-body {
-  margin: 0;
-  background-color: black;
-}
-h1 {
+p {
   color: white;
-  text-align: center;
-  border-bottom: 5px solid white;
-  max-width: 400px;
-  margin: 10px auto;
 }
 .container {
-  max-width: 590px;
-  max-height: 700px;
-  margin: 0px auto;
-  text-align: center;
-  border: 10px solid white;
+  width: 380px;
+  height: 330px;
+  margin: auto;
+  position: relative;
 }
-.grid {
-  height: 150px;
-  width: 150px;
-  background-color: white;
-  margin: 20px;
+.box {
   display: inline-block;
-  font-size: 100%;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  background-color: black;
+  position: relative;
 }
