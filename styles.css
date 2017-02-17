@@ -1,19 +1,135 @@
-p {
-  color: white;
-  margin: 0;
-  max-width: 100%;
+* {
+  box-sizing: border-box;
 }
+
 .container {
-  width: 380px;
-  height: 370px;
-  margin: auto;
-  position: relative;
+  width: 500px;
+  height: 500px;
+  display: block;
+  position: absolute;;
+  top: 25%;
+  right: 25%;
 }
-.box {
-  display: inline-block;
-  width: 100px;
-  height: 100px;
-  margin: 10px;
-  background-color: black;
-  position: relative;
+
+.winner, .draw {
+  width: 100%;
+  height: 100%;
+  font-size: 120px;
+  text-align: center;
+  padding-top: 30%;
+  position: fixed;
+  color: purple;
+  background-color: white;
+  display: none;
+}
+
+.square {
+  font-size: 100px;
+  font-family: 'Indie Flower', cursive;
+  text-align: center;
+  padding: 8%;
+}
+
+.turn {
+  display: block;
+  max-width: 100%;
+  position: absolute;;
+  top: 20px;
+  right: 33%;
+  text-align: center;
+  font-size: 48px;
+  font-family: 'Indie Flower', cursive;
+  padding: 30px;
+}
+
+.turn-letter {
+  font-size: 80px;
+}
+
+.top.left {
+  width: 33.333%;
+  height: 33%;
+  float:left;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  display: block;
+}
+
+.top.centre {
+  display: block;
+  width: 33.333%;
+  height: 33%;
+  float: left;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.top.right {
+  display: block;
+  width: 33.333%;
+  height: 33%;
+  float: left;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.mid.left {
+  display: block;
+  width: 33.333%;
+  height: 33%;
+  float: left;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+
+}
+
+.mid.centre {
+  display: block;
+  width: 33.333%;
+  height: 33%;
+  float: left;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.mid.right {
+  display: block;
+  width: 33.333%;
+  height: 33%;
+  float: left;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.bottom.left {
+  display: block;
+  width: 33.333%;
+  height: 33%;
+  float: left;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.bottom.centre {
+  display: block;
+  width: 33.333%;
+  height: 33%;
+  float: left;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.bottom.right {
+  display: block;
+  width: 33.333%;
+  height: 33%;
+  float: left;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
 }

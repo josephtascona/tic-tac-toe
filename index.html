@@ -1,41 +1,45 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Tic-Tac-Toe</title>
-    <link type="text/css" rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="box" id="tl">
 
-      </div>
-      <div class="box" id="tm">
+  <html lang="en">
 
-      </div>
-      <div class="box" id="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>Tic-Tac-Toe</title>
+        <link rel="stylesheet" type="text/css" href="http://meyerweb.com/eric/tools/css/reset/reset.css">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    </head>
 
-      </div>
-      <div class="box" id="ml">
+    <body>
 
+      <div class="winner">
+        Congratulations
+        <div class="winner-letter">X</div>
+        You win!
       </div>
-      <div class="box" id="mm">
 
+      <div class="draw">
+        Game over! It's a draw.
       </div>
-      <div class="box" id="mr">
 
+      <div class="turn">
+        <h2>It's your turn: <div class="turn-letter">O</div>
       </div>
-      <div class="box" id="bl">
+      <div class="container">
+          <div class="square top left"> </div>
+          <div class="square top centre"> </div>
+          <div class="square top right"> </div>
 
-      </div>
-      <div class="box" id="bm">
+          <div class="square mid left"> </div>
+          <div class="square mid centre"> </div>
+          <div class="square mid right"> </div>
 
+          <div class="square bottom left"> </div>
+          <div class="square bottom centre"> </div>
+          <div class="square bottom right"> </div>
       </div>
-      <div class="box" id="br">
+      <script src="js/vendor/jquery-1.11.3.min.js"></script>
+      <script src="js/main.js"></script>
+    </body>
 
-      </div>
-    </div>
-    <script src="js/vendor/jquery-1.11.3.min.js"></script>
-    <script src="js/main.js"></script>
-  </body>
 </html>
